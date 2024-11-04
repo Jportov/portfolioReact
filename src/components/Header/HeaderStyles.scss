@@ -45,22 +45,36 @@ nav {
     gap: 0.3rem;
 
     .bar {
-      width: 30px;
+      width: 20px;
       height: 3px;
       background-color: black;
-      border-radius: 3px;
+      border-radius: 1px;
       transition: 0.3s;
-    }
+      -webkit-border-radius: 1px;
+      -moz-border-radius: 1px;
+      -ms-border-radius: 1px;
+      -o-border-radius: 1px;
+    
+}
   }
 
   /* Estilos para dispositivos móveis */
   @media (max-width: 768px) {
+    .nav {
+      display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+    }
+    }
     .header-content {
       flex-direction: column;
       align-items: center;
-
+      justify-content: space-between;
     }
 
+    
     .nav-links {
       position: fixed;
       right: 0;
@@ -84,11 +98,9 @@ nav {
 
     .hamburger {
       display: flex;
-      
       position: absolute;
       right: 2rem;
       top: 2rem;
-
       .bar {
         transition: transform 0.3s ease, opacity 0.3s ease;
       }
@@ -120,7 +132,7 @@ nav {
 
     /* Botão de fechar dentro do menu - apenas visível no mobile */
     .close-btn {
-      display: block; /* Exibe o botão no mobile */
+      display: none; /* Exibe o botão no mobile */
       background: none;
       border: none;
       color: black;
@@ -138,4 +150,4 @@ nav {
   .close-btn {
     display: none;
   }
-}
+
