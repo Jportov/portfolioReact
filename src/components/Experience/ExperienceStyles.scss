@@ -4,10 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4rem 0; /* Adiciona espaçamento superior e inferior */
-  background: rgb(243, 243, 243);
-  border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 4rem 0;
   padding-top: 10rem;
   justify-content: center;
 
@@ -42,7 +39,6 @@
     .skills-category {
       flex: 1;
       padding: 1rem;
-      background: white;
       border-radius: 1rem;
       border: 0.1rem solid rgb(163, 163, 163);
       text-align: center;
@@ -65,7 +61,6 @@
         align-items: center;
         gap: 0.5rem;
         padding: 0.5rem;
-        background-color: #f9f9f9;
         border-radius: 0.5rem;
         transition: transform 0.2s ease;
 
