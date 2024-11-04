@@ -1,0 +1,15 @@
+/* Estilos específicos da aplicação - app.scss */
+
+/* Importação das fontes */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Aplicar fonte Poppins para o corpo da aplicação */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Transição suave para elementos clicáveis */
+a, .btn {
+  transition: all 300ms ease;
+}
+
