@@ -6,8 +6,8 @@ function Contact() {
   return (
     <section id="contact">
       <div className="section__text">
-        <p className="section__text__p1">Entre em</p>
-        <h1 className="title">Contato</h1>
+        <p className="section__text__p1">Entre em contato para fazer seu</p>
+        <h1 className="title">Orçamento</h1>
       </div>
       
       <div className="contact-info">
