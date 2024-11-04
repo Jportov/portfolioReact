@@ -2,21 +2,20 @@ nav {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
-
   position: relative;
   justify-content: space-around;
   z-index: 2;
 
+  .close-btn{
+    display: none;
+  }
   .header-content {
     display: flex;
     align-items: center;
-
   }
 
   .logo {
-      
     font-size: 2rem;
-    
   }
 
   .nav-links {
@@ -37,7 +36,7 @@ nav {
     }
   }
 
-  /* Ícone de hambúrguer - versão mobile */
+  /* Ícone de hambúrguer - escondido no desktop */
   .hamburger {
     display: none;
     flex-direction: column;
@@ -50,32 +49,14 @@ nav {
       background-color: black;
       border-radius: 1px;
       transition: 0.3s;
-      -webkit-border-radius: 1px;
-      -moz-border-radius: 1px;
-      -ms-border-radius: 1px;
-      -o-border-radius: 1px;
-    
-}
+    }
   }
 
   /* Estilos para dispositivos móveis */
   @media (max-width: 768px) {
-    .nav {
-      display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: space-between;
-    }
-    }
-    .header-content {
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    
     .nav-links {
+      /* Menu de navegação para mobile */
+      display: none; /* Esconder no mobile inicialmente */
       position: fixed;
       right: 0;
       top: 0;
@@ -92,20 +73,22 @@ nav {
       z-index: 3;
 
       &.open {
+        display: flex;
         transform: translateX(0);
       }
     }
 
+    /* Exibir ícone de hambúrguer no mobile */
     .hamburger {
       display: flex;
       position: absolute;
       right: 2rem;
       top: 2rem;
+
       .bar {
         transition: transform 0.3s ease, opacity 0.3s ease;
       }
 
-      /* Animação para o ícone ao abrir o menu */
       &.open .bar:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
@@ -145,9 +128,4 @@ nav {
       }
     }
   }
-
-  /* Oculta o botão de fechar em telas maiores */
-  .close-btn {
-    display: none;
-  }
-
+}
