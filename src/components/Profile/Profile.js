@@ -31,14 +31,16 @@ function Profile() {
         </div>
         <div id="socials-container">
           <div className="icon-content">
-            <a href="https://www.linkedin.com/in/vportodev/" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/vportodev/" aria-label="LinkedIn"  target="_blank"
+      rel="noopener noreferrer" >
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
               <div className="tooltip">LinkedIn</div>
             </a>
           </div>
 
           <div className="icon-content">
-            <a href="https://github.com/Jportov" aria-label="GitHub">
+            <a href="https://github.com/Jportov" aria-label="GitHub"  target="_blank"
+      rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} size="2x" />
               <div className="tooltip">GitHub</div>
             </a>
