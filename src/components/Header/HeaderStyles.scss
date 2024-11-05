@@ -93,14 +93,11 @@ nav {
     /* Exibir ícone de hambúrguer no mobile */
     .hamburger {
       display: flex;
-      position: absolute;
-      right: 3rem;
-      top: 2.4rem;
+      margin: 2rem;
       
 
       .bar {
         transition: transform 0.3s ease, opacity 0.3s ease;
-        
       }
 
       &.open .bar:nth-child(1) {
