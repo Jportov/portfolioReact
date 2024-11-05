@@ -1,5 +1,4 @@
 #experience {
-
   padding: 2rem 5%;
   display: flex;
   flex-direction: column;
@@ -26,7 +25,6 @@
       font-size: 2rem;
       color: #333;
     }
-  
   }
 
   .skills-container {
@@ -84,14 +82,32 @@
 
   /* Media Query para Dispositivos Móveis */
   @media (max-width: 600px) {
-    padding-top: 5rem;
-    margin: 2rem 0;
+    #experience {
+      padding-top: 5rem;
+      margin: 2rem 0;
+    }
+
+    .section__text {
+      padding: 1rem;
+    }
 
     .skills-container {
-
       flex-direction: column;
       align-items: center;
-      width: 80%;
+      width: 90%;
+    }
+
+    .skills-category {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .skills-list {
+      justify-content: center;
+    }
+
+    .skill p {
+      font-size: 0.9rem;
     }
   }
 }

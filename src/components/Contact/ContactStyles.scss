@@ -67,6 +67,9 @@
     height: auto;
     align-items: start;
     margin: 0;
+    .section__text {
+     align-self: center;
+    }
   }
 
   .contact-info p {

@@ -14,15 +14,17 @@ nav {
     align-items: center;
   }
 
-  .logo {
+  .logo img {
+    width: 60px;
     font-size: 2rem;
   }
 
   .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 800;
 
     a {
       color: black;
@@ -54,6 +56,15 @@ nav {
 
   /* Estilos para dispositivos móveis */
   @media (max-width: 768px) {
+    display: flex;
+    .logo img {
+      width: 50px;
+      margin: 0 auto;
+    }
+  .title {
+      font-size: 1rem;
+      color: #333;
+  }
     .nav-links {
       /* Menu de navegação para mobile */
       display: none; /* Esconder no mobile inicialmente */
@@ -62,15 +73,16 @@ nav {
       top: 0;
       width: 60%;
       height: 100vh;
-      background-color: #f4f4f4;
+      background-color: white;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 2rem;
+      gap: 1rem;
       box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
       transform: translateX(100%);
       transition: transform 0.3s ease-in-out;
       z-index: 3;
+      font-weight: 800;
 
       &.open {
         display: flex;
@@ -82,11 +94,13 @@ nav {
     .hamburger {
       display: flex;
       position: absolute;
-      right: 2rem;
-      top: 2rem;
+      right: 3rem;
+      top: 2.4rem;
+      
 
       .bar {
         transition: transform 0.3s ease, opacity 0.3s ease;
+        
       }
 
       &.open .bar:nth-child(1) {
