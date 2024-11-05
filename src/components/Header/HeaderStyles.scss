@@ -16,7 +16,7 @@ nav {
 
   .logo img {
     width: 60px;
-    font-size: 2rem;
+    
   }
 
   .nav-links {
@@ -57,9 +57,15 @@ nav {
   /* Estilos para dispositivos móveis */
   @media (max-width: 768px) {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
     .logo img {
       width: 50px;
+      height: 50px;
       margin: 0 auto;
+      
     }
   .title {
       font-size: 1rem;
@@ -93,12 +99,23 @@ nav {
     /* Exibir ícone de hambúrguer no mobile */
     .hamburger {
       display: flex;
-      margin: 2rem;
+      position: absolute;
+      right: 3rem;
+      margin: 0 auto;
+      padding: 1.2rem;
+      top: auto;
       
 
       .bar {
+        width: 30px;
+        height: 4px;
         transition: transform 0.3s ease, opacity 0.3s ease;
-      }
+        max-width: 100%;
+        -webkit-transition: transform 0.3s ease, opacity 0.3s ease;
+        -moz-transition: transform 0.3s ease, opacity 0.3s ease;
+        -ms-transition: transform 0.3s ease, opacity 0.3s ease;
+        -o-transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
       &.open .bar:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
