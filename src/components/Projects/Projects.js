@@ -1,7 +1,12 @@
 import React from 'react';
 import projectCoringa from '../assets/images/coringa.png';
 import projectDisney from '../assets/images/dsneyclone.png';
+import projectEfood from '../assets/images/Efood2.jpg';
+import projectEli from '../assets/images/Elidecor.jpg';
+import projectIMC from '../assets/images/IMC.jpeg';
+import projectListaV from '../assets/images/ListVue.jpeg';
 import projectPortoDay from '../assets/images/portoday.png';
+import projectGrill from '../assets/images/portogrill.jpeg';
 import projectTech from '../assets/images/portotech.png';
 import projectSorteador from '../assets/images/sorteador.png';
 import projectWeather from '../assets/images/weatherapp.png';
@@ -62,6 +67,46 @@ function Projects() {
           <div className="buttons">
             <button onClick={() => window.open('https://github.com/Jportov/joaoaniversario', '_blank')}>Github</button>
             <button onClick={() => window.open('https://joaoaniversario.vercel.app', '_blank')}>Site Demo</button>
+          </div>
+        </div>
+        <div className="project">
+          <img src={projectGrill} alt="PortoGrill" />
+          <h2>PortoGrill</h2>
+          <div className="buttons">
+            <button onClick={() => window.open('https://github.com/Jportov/portogrill', '_blank')}>Github</button>
+            <button onClick={() => window.open('https://portogrill.vercel.app', '_blank')}>Site Demo</button>
+          </div>
+        </div>
+        <div className="project">
+          <img src={projectIMC} alt="Calculadora IMC" />
+          <h2>Calculadora IMC</h2>
+          <div className="buttons">
+            <button onClick={() => window.open('https://github.com/Jportov/calculadora_imc', '_blank')}>Github</button>
+            <button onClick={() => window.open('https://calculadora-imc-jvp.vercel.app', '_blank')}>Site Demo</button>
+          </div>
+        </div>
+        <div className="project">
+          <img src={projectListaV} alt="To Do list" />
+          <h2>To Do List</h2>
+          <div className="buttons">
+            <button onClick={() => window.open('https://github.com/Jportov/todo-list', '_blank')}>Github</button>
+            <button onClick={() => window.open('https://todo-list-steel-beta.vercel.app', '_blank')}>Site Demo</button>
+          </div>
+        </div>
+        <div className="project">
+          <img src={projectEfood} alt="Efood" />
+          <h2>E-food</h2>
+          <div className="buttons">
+            <button onClick={() => window.open('https://github.com/Jportov/efood', '_blank')}>Github</button>
+            <button onClick={() => window.open('https://efood-fet2.vercel.app', '_blank')}>Site Demo</button>
+          </div>
+        </div>
+        <div className="project">
+          <img src={projectEli} alt="EliDecor" />
+          <h2>EliDecor</h2>
+          <div className="buttons">
+            <button onClick={() => window.open('https://github.com/Jportov/elidecor1', '_blank')}>Github</button>
+            <button onClick={() => window.open('https://elidecor.vercel.app', '_blank')}>Site Demo</button>
           </div>
         </div>
       </div>
